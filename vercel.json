@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/standings",
+      "destination": "https://api.sportdb.dev/api/flashscore/football/standings"
+    }
+  ]
+}
