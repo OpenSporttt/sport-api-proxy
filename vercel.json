@@ -4,5 +4,24 @@
       "source": "/api/standings",
       "destination": "https://api.sportdb.dev/api/flashscore/football/standings"
     }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://opensporttt.github.io" 
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET,OPTIONS,PATCH,DELETE,POST,PUT"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "X-API-Key, Origin, X-Requested-With, Content-Type, Accept"
+        }
+      ]
+    }
   ]
 }
